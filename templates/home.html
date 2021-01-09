@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Pge</title>
+</head>
+<body>
+    <p>Hello there! This is home.html</p>
+
+    <form action="{% url 'count' %}">
+        <textarea name="fulltext" cols="40" rows="5"></textarea>
+        <br>
+        <input type="submit" name="Submit" value="Count Values">
+        <br>
+    </form>
+
+    <a href="{% url 'about' %}">
+        <input type="submit" name="About" value="About">
+    </a>
+</body>
+</html>

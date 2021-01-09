@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count</title>
+</head>
+<body>
+    <p>The text:</p>
+
+    {{ fulltext }}
+
+    <p>Wordcount is: {{ count }}</p>
+
+    <a href=" {% url 'home' %}">Start again counting!</a>
+
+    <br>
+    
+    {% for word, counttotal in sortedWords %}
+
+        <b>{{ word }}</b> was used {{ counttotal }} times
+
+        <br>
+    {% endfor %}
+        
+</body>
+</html>
